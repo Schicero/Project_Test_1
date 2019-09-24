@@ -1,0 +1,10 @@
+1.
+create database ky location 'hdfs://node:9000/my/test';
+2.
+create database xsgl comment 'student management'  location ' hdfs://node:9000/my/test' with dbproperties('creator'='tanzhijun');
+3.
+describe database extended xsgl;
+4.
+alter xsgl set dbproperties("creator"="tanzhijun","create_time"="2019-3-21");
+5.
+drop database ky cascade;
